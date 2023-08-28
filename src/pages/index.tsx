@@ -1,7 +1,12 @@
-import { Header } from "@/components/Header"
+import { LayoutsPageDefault } from "@/layouts/LayoutsPageDefault"
 
 export default function Home() {
   return (
-    <header></header>
+          <div className="bg-gray-200">
+        <LayoutsPageDefault>
+         
+        </LayoutsPageDefault>
+      </div>
+
   )
 }
