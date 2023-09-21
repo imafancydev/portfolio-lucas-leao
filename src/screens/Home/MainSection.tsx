@@ -7,7 +7,6 @@ import {
 
 import { Anchor } from "@/components/Anchor";
 import { Keyboard } from "@/components/Keyboard";
-import { Mechanical } from "@/components/Mechanical";
 
 export const MainSection = () => {
   return (
