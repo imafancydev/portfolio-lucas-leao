@@ -4,7 +4,7 @@ import { ReactNode } from "react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
-interface LayoutProps{
+interface LayoutProps {
   children: ReactNode;
 };
 
@@ -13,7 +13,7 @@ const poppins = Poppins({
   weight: ["400", "700"]
 });
 
-export const LayoutsPageDefault = ({children}: LayoutProps) => {
+export const LayoutsPageDefault = ({ children }: LayoutProps) => {
   return (
     <>
       <Header />

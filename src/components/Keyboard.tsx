@@ -10,8 +10,8 @@ Title: Mechanical Keyboard
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
-export function Keyboard(props:any) {
-  const { nodes, materials }:any = useGLTF('/assets/mechanical_keyboard.glb')
+export function Keyboard(props: any) {
+  const { nodes, materials }: any = useGLTF('/assets/mechanical_keyboard.glb')
   return (
     <group {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 1.4, 1.2]}>

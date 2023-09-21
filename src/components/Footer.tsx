@@ -1,8 +1,8 @@
 import { Poppins } from "next/font/google";
 
 import logo from "public/assets/logo.svg";
-
 import Image from "next/image";
+
 import { Anchor } from "./Anchor";
 
 const poppins = Poppins({

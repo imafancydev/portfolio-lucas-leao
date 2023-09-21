@@ -7,8 +7,8 @@ const Home = () => {
     <>
       <div className="bg-gray-200">
         <LayoutsPageDefault>
-        <MainSection />
-        <AboutMe />
+          <MainSection />
+          <AboutMe />
         </LayoutsPageDefault>
       </div>
     </>

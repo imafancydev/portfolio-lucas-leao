@@ -1,5 +1,5 @@
 import { Canvas } from "@react-three/fiber";
-import {OrbitControls, Stage } from "@react-three/drei";
+import { OrbitControls, Stage } from "@react-three/drei";
 import {
   AiOutlineGithub,
   AiOutlineLinkedin,
@@ -10,8 +10,8 @@ import { Keyboard } from "@/components/Keyboard";
 
 export const MainSection = () => {
   return (
-     <section
-      className="py-48 px-5 md:p-24 md:px-10 flex items-center bg-gray-200"
+    <section
+      className="py-48 px-5 md:p-24 md:px-10 flex items-center bg-gray-700"
       id="inicio"
     >
       <div className="w-full flex flex-col gap-2">
@@ -56,6 +56,6 @@ export const MainSection = () => {
         </Stage>
       </Canvas>
     </section>
-    
+
   );
 };
