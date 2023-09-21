@@ -6,11 +6,11 @@ import { Footer } from "@/components/Footer";
 
 interface LayoutProps {
   children: ReactNode;
-};
+}
 
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["400", "700"]
+  weight: ["400", "700"],
 });
 
 export const LayoutsPageDefault = ({ children }: LayoutProps) => {

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Poppins } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
 import { useEffect, useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
@@ -8,7 +8,7 @@ import logo from "public/assets/logo.svg";
 import { Button } from "./Button";
 import { Anchor } from "./Anchor";
 
-const poppins = Poppins({
+const space_grotesk = Space_Grotesk({
   subsets: ["latin"],
   weight: ["400", "700"],
 });
@@ -25,8 +25,9 @@ export const Header = () => {
 
   return (
     <header
-      className={`flex justify-center items-center z-50 px-5 py-5 fixed w-full transition-all duration-500 font-body md:px-8 ${isMaximized ? "bg-gray-200 shadow-2xl" : "bg-transparent"
-        } ${poppins.className}`}
+      className={`flex justify-center items-center z-50 px-5 py-5 fixed w-full transition-all duration-500 font-body md:px-8 ${
+        isMaximized ? "bg-gray-200 shadow-2xl" : "bg-transparent"
+      } ${space_grotesk.className}`}
     >
       <nav className="w-full max-w-[75rem] flex flex-col items-center md:flex-row bg">
         <div className="max-md:w-full max-md:flex max-md:justify-between max-md:items-center">
@@ -34,8 +35,9 @@ export const Header = () => {
             <Image
               src={logo}
               alt=""
-              className={`${isMaximized ? "w-10" : "w-8"
-                } transition-all duration-500`}
+              className={`${
+                isMaximized ? "w-10" : "w-8"
+              } transition-all duration-500`}
             />
           </a>
 
@@ -49,8 +51,9 @@ export const Header = () => {
         </div>
 
         <ul
-          className={`${menuIsOpen ? "left-0" : "left-[-880px]"
-            } bg-gray-200 top-20 px-5 flex flex-col gap-4 w-full absolute py-10 transition-all duration-500 md:static md:bg-transparent md:px-0 md:py-0 md:flex md:flex-row md:justify-end md:items-center md:gap-5 md:visible`}
+          className={`${
+            menuIsOpen ? "left-0" : "left-[-880px]"
+          } bg-gray-200 top-20 px-5 flex flex-col gap-4 w-full absolute py-10 transition-all duration-500 md:static md:bg-transparent md:px-0 md:py-0 md:flex md:flex-row md:justify-end md:items-center md:gap-5 md:visible`}
         >
           <li>
             <Anchor href="#inicio" onClick={() => setMenuIsOpen(false)}>
@@ -81,5 +84,4 @@ export const Header = () => {
       </nav>
     </header>
   );
-
 };

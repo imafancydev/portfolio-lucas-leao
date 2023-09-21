@@ -1,11 +1,11 @@
-import { Poppins } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
 
 import logo from "public/assets/logo.svg";
 import Image from "next/image";
 
 import { Anchor } from "./Anchor";
 
-const poppins = Poppins({
+const space_grotesk = Space_Grotesk({
   subsets: ["latin"],
   weight: ["400", "700"],
 });
@@ -13,7 +13,7 @@ const poppins = Poppins({
 export const Footer = () => {
   return (
     <footer
-      className={`w-full max-w-[80rem] m-auto p-5 md:p-10 flex flex-col justify-between items-left gap-10 border-t-[1px] bg-gray-200 border-zinc-400 md:items-center md:flex-row ${poppins.className}`}
+      className={`w-full max-w-[80rem] m-auto p-5 md:p-10 flex flex-col justify-between items-left gap-10 border-t-[1px] bg-gray-200 border-zinc-400 md:items-center md:flex-row ${space_grotesk.className}`}
     >
       <div>
         <div>

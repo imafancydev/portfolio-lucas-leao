@@ -1,9 +1,6 @@
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Stage } from "@react-three/drei";
-import {
-  AiOutlineGithub,
-  AiOutlineLinkedin,
-} from "react-icons/ai";
+import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
 
 import { Anchor } from "@/components/Anchor";
 import { Keyboard } from "@/components/Keyboard";
@@ -16,14 +13,10 @@ export const MainSection = () => {
     >
       <div className="w-full flex flex-col gap-2">
         <p className="text-zinc-900 text-lg">Olá, meu nome é</p>
-        <h1 className="font-bold bg-clip-text md:text-6xl">
-          Lucas Leão
-        </h1>
+        <h1 className="font-bold bg-clip-text md:text-6xl">Lucas Leão</h1>
         <p className="text-zinc-900 text-xl">
           Desenvolvedor{" "}
-          <span className="text-transparent bg-clip-text">
-            front-end
-          </span>
+          <span className="text-transparent bg-clip-text">front-end</span>
         </p>
 
         <nav>
@@ -34,10 +27,7 @@ export const MainSection = () => {
               </Anchor>
             </li>
             <li>
-              <Anchor
-                href="https://linkedin.com/in/LucasLeao6"
-                target="_blank"
-              >
+              <Anchor href="https://linkedin.com/in/LucasLeao6" target="_blank">
                 <AiOutlineLinkedin size={28} />
               </Anchor>
             </li>
@@ -56,6 +46,5 @@ export const MainSection = () => {
         </Stage>
       </Canvas>
     </section>
-
   );
 };

@@ -7,25 +7,43 @@ Source: https://sketchfab.com/3d-models/mechanical-keyboard-1facc22c744a403dbb31
 Title: Mechanical Keyboard
 */
 
-import React, { useRef } from 'react'
-import { useGLTF } from '@react-three/drei'
+import React, { useRef } from "react";
+import { useGLTF } from "@react-three/drei";
 
 export function Keyboard(props: any) {
-  const { nodes, materials }: any = useGLTF('/assets/mechanical_keyboard.glb')
+  const { nodes, materials }: any = useGLTF("/assets/mechanical_keyboard.glb");
   return (
     <group {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 1.4, 1.2]}>
         <group rotation={[Math.PI / 3, 0, 0]}>
-          <mesh geometry={nodes.defaultMaterial.geometry} material={materials['03___Default']} />
-          <mesh geometry={nodes.defaultMaterial_1.geometry} material={materials['09___Default']} />
-          <mesh geometry={nodes.defaultMaterial_2.geometry} material={materials['02___Default']} />
-          <mesh geometry={nodes.defaultMaterial_3.geometry} material={materials['08___Default']} />
-          <mesh geometry={nodes.defaultMaterial_4.geometry} material={materials['07___Default']} />
-          <mesh geometry={nodes.defaultMaterial_5.geometry} material={materials['01___Default']} />
+          <mesh
+            geometry={nodes.defaultMaterial.geometry}
+            material={materials["03___Default"]}
+          />
+          <mesh
+            geometry={nodes.defaultMaterial_1.geometry}
+            material={materials["09___Default"]}
+          />
+          <mesh
+            geometry={nodes.defaultMaterial_2.geometry}
+            material={materials["02___Default"]}
+          />
+          <mesh
+            geometry={nodes.defaultMaterial_3.geometry}
+            material={materials["08___Default"]}
+          />
+          <mesh
+            geometry={nodes.defaultMaterial_4.geometry}
+            material={materials["07___Default"]}
+          />
+          <mesh
+            geometry={nodes.defaultMaterial_5.geometry}
+            material={materials["01___Default"]}
+          />
         </group>
       </group>
     </group>
-  )
+  );
 }
 
-useGLTF.preload('/assets/mechanical_keyboard.glb')
+useGLTF.preload("/assets/mechanical_keyboard.glb");
