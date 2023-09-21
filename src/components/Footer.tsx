@@ -23,21 +23,21 @@ export const Footer = () => {
           <p className="text-sm font-body text-zinc-900">
             Arte 3D{" "}
             <Anchor
-              href="https://sketchfab.com/3d-models/stylized-keyboard-a9715f28ca0a411bb44747a89ca0ef42"
+              href="https://sketchfab.com/3d-models/mechanical-keyboard-1facc22c744a403dbb3166a2274f78dd"
               target="_blank"
             >
               Stylized Keyboard
             </Anchor>{" "}
             criada por{" "}
-            <Anchor href="https://sketchfab.com/begle" target="_blank">
-              Begle
+            <Anchor href="https://sketchfab.com/Urpo" target="_blank">
+              Urpo
             </Anchor>{" "}
             e usada com autorização de acordo com a licença{" "}
             <Anchor
-              href="http://creativecommons.org/licenses/by/4.0/"
+              href="http://creativecommons.org/licenses/by-nc/4.0/"
               target="_blank"
             >
-              CC-BY-4.0
+              CC-BY-NC-4.0
             </Anchor>
           </p>
         </div>

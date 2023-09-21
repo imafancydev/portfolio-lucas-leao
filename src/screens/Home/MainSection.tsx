@@ -6,7 +6,8 @@ import {
 } from "react-icons/ai";
 
 import { Anchor } from "@/components/Anchor";
-import { Scene } from "@/components/Scene";
+import { Keyboard } from "@/components/Keyboard";
+import { Mechanical } from "@/components/Mechanical";
 
 export const MainSection = () => {
   return (
@@ -44,19 +45,18 @@ export const MainSection = () => {
           </ul>
         </nav>
       </div>
-
-
-    <Canvas
+      <Canvas
         className="visible max-md:hidden"
-        style={{ width: "650px", height: "500px" }}
+        style={{ width: "700px", height: "500px" }}
         linear
         flat
       >
-        <Stage intensity={1}>
-          <Scene />
+        <Stage intensity={3}>
+          <Keyboard />
           <OrbitControls autoRotate enableZoom={false} />
         </Stage>
       </Canvas>
     </section>
+    
   );
 };
