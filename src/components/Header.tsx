@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 import logo from "public/assets/logo.svg";
-
 import { Button } from "./Button";
 import { Anchor } from "./Anchor";
 
@@ -43,7 +42,7 @@ export const Header = () => {
 
           <button
             onClick={() => setMenuIsOpen(!menuIsOpen)}
-            className="text-zinc-900 visible md:hidden"
+            className="text-zinc-400 visible md:hidden"
           >
             {menuIsOpen && <AiOutlineClose size={32} />}
             {!menuIsOpen && <AiOutlineMenu size={32} />}
