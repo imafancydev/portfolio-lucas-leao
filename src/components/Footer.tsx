@@ -26,7 +26,7 @@ export const Footer = () => {
               href="https://sketchfab.com/3d-models/mechanical-keyboard-1facc22c744a403dbb3166a2274f78dd"
               target="_blank"
             >
-              Stylized Keyboard
+              Mechanical Keyboard
             </Anchor>{" "}
             criada por{" "}
             <Anchor href="https://sketchfab.com/Urpo" target="_blank">
