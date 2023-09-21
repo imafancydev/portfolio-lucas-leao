@@ -1,4 +1,4 @@
-import { Poppins } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
 import { ReactNode } from "react";
 
 import { Header } from "@/components/Header";
@@ -8,7 +8,7 @@ interface LayoutProps {
   children: ReactNode;
 }
 
-const poppins = Poppins({
+const space_grotesk = Space_Grotesk({
   subsets: ["latin"],
   weight: ["400", "700"],
 });
@@ -17,7 +17,7 @@ export const LayoutsPageDefault = ({ children }: LayoutProps) => {
   return (
     <>
       <Header />
-      <main className={`${poppins.className} max-w-[80rem] m-auto`}>
+      <main className={`${space_grotesk.className} max-w-[80rem] m-auto`}>
         {children}
       </main>
       <Footer />

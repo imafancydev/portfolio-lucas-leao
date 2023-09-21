@@ -1,10 +1,4 @@
-import { ReactNode, AnchorHTMLAttributes } from "react";
-
-interface IAnchorProps extends AnchorHTMLAttributes<HTMLElement> {
-  children: ReactNode;
-}
-
-export const Anchor = ({ children, ...rest }: IAnchorProps) => {
+export const Anchor = ({ children, ...rest }: any) => {
   return (
     <a
       className={`text-zinc-900 transition-all duration-500 hover:text-opacity-75`}
