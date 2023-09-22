@@ -23,17 +23,25 @@ export const Footer = () => {
           <p className="text-sm font-body text-zinc-900">
             Arte 3D{" "}
             <Anchor
+              className="text-sm font-bold"
               href="https://sketchfab.com/3d-models/mechanical-keyboard-1facc22c744a403dbb3166a2274f78dd"
               target="_blank"
             >
               Mechanical Keyboard
             </Anchor>{" "}
             criada por{" "}
-            <Anchor href="https://sketchfab.com/Urpo" target="_blank">
-              Urpo
-            </Anchor>{" "}
-            e usada com autorização de acordo com a licença{" "}
             <Anchor
+              className="text-sm font-bold"
+              href="https://sketchfab.com/Urpo"
+              target="_blank"
+            >
+              Urpo.
+            </Anchor>{" "}
+          </p>
+          <p className="text-sm font-body text-zinc-900">
+            <Anchor className="text-sm ">Licença</Anchor>{" "}
+            <Anchor
+              className="text-sm font-bold"
               href="http://creativecommons.org/licenses/by-nc/4.0/"
               target="_blank"
             >

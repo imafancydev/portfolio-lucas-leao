@@ -18,7 +18,7 @@ export const Header = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      setIsMinimized(window.scrollY > 50);
+      setIsMinimized(window.scrollY > 1);
     });
   }, [isMaximized]);
 
@@ -35,11 +35,10 @@ export const Header = () => {
               src={logo}
               alt=""
               className={`${
-                isMaximized ? "w-10" : "w-8"
+                isMaximized ? "w-12" : "w-11"
               } transition-all duration-500`}
             />
           </a>
-
           <button
             onClick={() => setMenuIsOpen(!menuIsOpen)}
             className="text-zinc-400 visible md:hidden"
