@@ -6,7 +6,6 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import logo from "public/assets/logo.svg";
 import { Button } from "./Button";
 import { Anchor } from "./Anchor";
-
 const space_grotesk = Space_Grotesk({
   subsets: ["latin"],
   weight: ["400", "700"],
@@ -64,8 +63,8 @@ export const Header = () => {
             </Anchor>
           </li>
           <li>
-            <Anchor href="#servicos" onClick={() => setMenuIsOpen(false)}>
-              Serviços
+            <Anchor href="#habilidades" onClick={() => setMenuIsOpen(false)}>
+              Habilidades
             </Anchor>
           </li>
           <li>
