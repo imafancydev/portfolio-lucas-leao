@@ -26,7 +26,7 @@ export const ContainerCards = () => {
             show: { rotate: 0, opacity: 1 },
           }}
           className="
-      text-center relative bg-gray-200 shadow-md rounded-3xl transition-all duration-500 flex justify-center items-center group overflow-hidden z-10 w-24 md:w-[8.625rem] aspect-[1/1.1] cursor-pointer"
+           text-center relative bg-gray-200 shadow-md rounded-3xl transition-all duration-500 flex justify-center items-center group overflow-hidden z-10 w-24 md:w-[8.625rem] aspect-[1/1.1] cursor-pointer"
         >
           <Tailwind />
           <span

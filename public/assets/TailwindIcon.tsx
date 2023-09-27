@@ -1,13 +1,12 @@
+import { useMediaQuery } from "@/hook/UseMedia";
 import React from "react";
 export const Tailwind = () => {
+  const isDesktop = useMediaQuery("(min-width: 650px)");
   return (
     <svg
-      className="
-         sm:group-hover:scale-110 -translate-y-3 sm:-translate-y-2 sm:group-hover:-translate-y-4 sm:group-hover:transition-all sm:group-hover:duration-500 
-        "
       xmlns="http://www.w3.org/2000/svg"
-      width="60"
-      height="60"
+      width={isDesktop ? 100 : 50}
+      height={isDesktop ? 100 : 50}
       viewBox="0 0 32 32"
     >
       <path
