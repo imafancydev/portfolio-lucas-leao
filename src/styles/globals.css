@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 1px;
 }
 
 /* Track */
@@ -42,15 +42,5 @@
   }
   100% {
     background-size: 650%;
-  }
-}
-
-.svg-container {
-  width: 300px;
-  height: 200px;
-
-  @media (max-width: 768px) {
-    width: 150px;
-    height: 100px;
   }
 }

@@ -1,7 +1,7 @@
 import { useMediaQuery } from "@/hook/UseMedia";
 import React from "react";
 export const Tailwind = () => {
-  const isDesktop = useMediaQuery("(min-width: 650px)");
+  const isDesktop = useMediaQuery("(min-width: 768px)");
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
