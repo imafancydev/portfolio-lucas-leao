@@ -12,7 +12,7 @@ export const FigmaIcon = () => {
       fill="none"
     >
       <path
-        stroke="#000000"
+        stroke="#F6FBF4"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={2}
