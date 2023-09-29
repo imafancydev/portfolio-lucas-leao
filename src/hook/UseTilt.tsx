@@ -1,6 +1,6 @@
 import { motion, HTMLMotionProps } from "framer-motion";
 import { useEffect, useRef } from "react";
-import VanillaTilt, { TiltOptions, HTMLVanillaTiltElement } from "vanilla-tilt";
+import VanillaTilt, { TiltOptions } from "vanilla-tilt";
 
 interface UseTiltProps extends HTMLMotionProps<"li"> {
   options?: TiltOptions;
@@ -9,7 +9,10 @@ interface UseTiltProps extends HTMLMotionProps<"li"> {
 const optionsDefault: TiltOptions = {
   scale: 1.2,
   speed: 1000,
-  max: 30,
+  max: 46,
+  glare: true,
+  "max-glare": 1,
+  reverse: true,
 };
 export const UseTilt = (props: UseTiltProps) => {
   const tilt = useRef<HTMLLIElement | null>(null);

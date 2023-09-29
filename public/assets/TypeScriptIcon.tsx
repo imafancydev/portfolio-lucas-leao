@@ -6,8 +6,8 @@ export const TypeScriptIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={isDesktop ? 70 : 70}
-      height={isDesktop ? 70 : 70}
+      width={isDesktop ? 70 : 35}
+      height={isDesktop ? 70 : 35}
       viewBox="0 0 32 32"
     >
       <path
