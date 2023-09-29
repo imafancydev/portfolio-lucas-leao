@@ -34,8 +34,7 @@ export const UseTilt = (props: UseTiltProps) => {
         hidden: { rotate: 70, opacity: 0 },
         show: { rotate: 0, opacity: 1 },
       }}
-      className="
-           text-center relative bg-gray-200 shadow-md rounded-3xl flex justify-center items-center group overflow-hidden z-10 w-24 sm:w-[8.625rem] aspect-[1/1.1] cursor-pointer"
+      className="text-center relative bg-gray-200 shadow-md rounded-3xl flex justify-center items-center group overflow-hidden z-10 w-24 sm:w-[8.625rem] aspect-[1/1.1] cursor-pointer"
     ></motion.li>
   );
 };

@@ -9,6 +9,8 @@ import { FigmaIcon } from "../../public/assets/FigmaIcon";
 import { JavaScriptIcon } from "../../public/assets/JavaScriptIcon";
 import { HtmlIcon } from "../../public/assets/HtmlIcon";
 import { CssIcon } from "../../public/assets/CssIcon";
+import { NodeJsIcon } from "../../public/assets/NodeJsIcon";
+import { MySqlIcon } from "../../public/assets/MySqlIcon";
 
 export const ContainerCards = () => {
   return (
@@ -80,6 +82,18 @@ export const ContainerCards = () => {
         <CssIcon />
         <span className="text-zinc-500 cursor-pointer transition-all duration-500 absolute md:-left-10 bottom-4 md:group-hover:left-12 md:text-base font-bold md:opacity-0 md:group-hover:opacity-100">
           Css3
+        </span>
+      </UseTilt>
+      <UseTilt>
+        <NodeJsIcon />
+        <span className="text-zinc-500 cursor-pointer transition-all duration-500 absolute md:left-10 bottom-4 md:group-hover:left-10 md:text-base font-bold md:opacity-0 md:group-hover:opacity-100">
+          NodeJs
+        </span>
+      </UseTilt>
+      <UseTilt>
+        <MySqlIcon />
+        <span className="text-zinc-500 cursor-pointer transition-all duration-500 absolute md:left-10 bottom-4 md:group-hover:left-11 md:text-base font-bold md:opacity-0 md:group-hover:opacity-100">
+          MySql
         </span>
       </UseTilt>
     </motion.ul>
