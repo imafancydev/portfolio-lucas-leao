@@ -1,3 +1,4 @@
+import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import { UseTilt } from "@/hook/UseTilt";
 import { Tailwind } from "../../public/assets/TailwindIcon";
@@ -11,8 +12,20 @@ import { HtmlIcon } from "../../public/assets/HtmlIcon";
 import { CssIcon } from "../../public/assets/CssIcon";
 import { NodeJsIcon } from "../../public/assets/NodeJsIcon";
 import { MySqlIcon } from "../../public/assets/MySqlIcon";
+import { TiltOptions } from "vanilla-tilt";
 
 export const ContainerCards = () => {
+  const options: TiltOptions = {
+    scale: 1.2,
+    speed: 1000,
+    max: 46,
+    glare: true,
+    "max-glare": 1,
+    reverse: true,
+  };
+
+  const elementRef = UseTilt<HTMLLIElement>(options);
+
   return (
     <motion.ul
       initial="hidden"
@@ -36,6 +49,7 @@ export const ContainerCards = () => {
           hidden: { rotate: 70, opacity: 0 },
           show: { rotate: 0, opacity: 1 },
         }}
+        ref={elementRef}
         className="text-center relative bg-gray-200 shadow-md rounded-3xl flex justify-center items-center group overflow-hidden z-10 w-24 sm:w-[8.625rem] aspect-[1/1.1] cursor-pointer"
       >
         <TypeScriptIcon />
