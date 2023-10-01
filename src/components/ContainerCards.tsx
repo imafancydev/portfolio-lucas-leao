@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import { UseTilt } from "@/hook/UseTilt";
 import { Tailwind } from "../../public/assets/TailwindIcon";
+import { TiltOptions } from "vanilla-tilt";
 import { ReactIcon } from "../../public/assets/ReactIcon";
 import { TypeScriptIcon } from "../../public/assets/TypeScriptIcon";
 import { NextJsIcon } from "../../public/assets/NextJsIcon";
@@ -12,19 +13,33 @@ import { HtmlIcon } from "../../public/assets/HtmlIcon";
 import { CssIcon } from "../../public/assets/CssIcon";
 import { NodeJsIcon } from "../../public/assets/NodeJsIcon";
 import { MySqlIcon } from "../../public/assets/MySqlIcon";
-import { TiltOptions } from "vanilla-tilt";
 
 export const ContainerCards = () => {
   const options: TiltOptions = {
     scale: 1.2,
-    speed: 1000,
-    max: 46,
+    speed: 2000,
+    max: 50,
     glare: true,
     "max-glare": 1,
     reverse: true,
+    transition: true,
   };
 
-  const elementRef = UseTilt<HTMLLIElement>(options);
+  const data = [
+    { icon: <TypeScriptIcon />, text: "TypeScript" },
+    { icon: <ReactIcon />, text: "React" },
+    { icon: <Tailwind />, text: "Tailwind" },
+    { icon: <NextJsIcon />, text: "NextJs" },
+    { icon: <StyledComponentsIcon />, text: "Style C." },
+    { icon: <FigmaIcon />, text: "Figma" },
+    { icon: <JavaScriptIcon />, text: "JavaScript" },
+    { icon: <HtmlIcon />, text: "Html" },
+    { icon: <CssIcon />, text: "Css" },
+    { icon: <NodeJsIcon />, text: "NodeJs" },
+    { icon: <MySqlIcon />, text: "MySQL" },
+  ];
+
+  const elementRefs = UseTilt<HTMLLIElement>(data.length, options);
 
   return (
     <motion.ul
@@ -38,155 +53,24 @@ export const ContainerCards = () => {
           },
         },
       }}
-      className="
-      flex flex-wrap justify-center items-center
-      gap-4 md:gap-[1.5625rem]
-    "
+      className="flex flex-wrap justify-center items-center gap-4 md:gap-[1.5625rem]"
     >
-      <motion.li
-        whileHover={{ scale: 1.1 }}
-        variants={{
-          hidden: { rotate: 70, opacity: 0 },
-          show: { rotate: 0, opacity: 1 },
-        }}
-        ref={elementRef}
-        className="text-center relative bg-gray-200 shadow-md rounded-3xl flex justify-center items-center group overflow-hidden z-10 w-24 sm:w-[8.625rem] aspect-[1/1.1] cursor-pointer"
-      >
-        <TypeScriptIcon />
-        <span className="text-zinc-500 cursor-pointer transition-all duration-500 absolute md:-left-8 bottom-1 md:group-hover:left-7 -translate-y-3 md:text-base font-bold md:opacity-0 md:group-hover:opacity-100">
-          TypeScript
-        </span>
-      </motion.li>
-      <motion.li
-        whileHover={{ scale: 1.1 }}
-        variants={{
-          hidden: { rotate: 70, opacity: 0 },
-          show: { rotate: 0, opacity: 1 },
-        }}
-        className="text-center relative bg-gray-200 shadow-md rounded-3xl flex justify-center items-center group overflow-hidden z-10 w-24 sm:w-[8.625rem] aspect-[1/1.1] cursor-pointer"
-      >
-        <ReactIcon />
-        <span className="text-zinc-500 cursor-pointer transition-all duration-500 absolute md:-left-10 bottom-4 md:group-hover:left-12 md:text-base font-bold md:opacity-0 md:group-hover:opacity-100">
-          React
-        </span>
-      </motion.li>
-      <motion.li
-        whileHover={{ scale: 1.1 }}
-        variants={{
-          hidden: { rotate: 70, opacity: 0 },
-          show: { rotate: 0, opacity: 1 },
-        }}
-        className="text-center relative bg-gray-200 shadow-md rounded-3xl flex justify-center items-center group overflow-hidden z-10 w-24 sm:w-[8.625rem] aspect-[1/1.1] cursor-pointer"
-      >
-        <Tailwind />
-        <span className="text-zinc-500 cursor-pointer transition-all duration-500 absolute md:-left-10 bottom-4 md:group-hover:left-9 md:text-base font-bold md:opacity-0 md:group-hover:opacity-100">
-          Tailwind
-        </span>
-      </motion.li>
-      <motion.li
-        whileHover={{ scale: 1.1 }}
-        variants={{
-          hidden: { rotate: 70, opacity: 0 },
-          show: { rotate: 0, opacity: 1 },
-        }}
-        className="text-center relative bg-gray-200 shadow-md rounded-3xl flex justify-center items-center group overflow-hidden z-10 w-24 sm:w-[8.625rem] aspect-[1/1.1] cursor-pointer"
-      >
-        <NextJsIcon />
-        <span className="text-zinc-500 cursor-pointer transition-all duration-500 absolute md:-left-10 bottom-4 md:group-hover:left-10 md:text-base font-bold md:opacity-0 md:group-hover:opacity-100">
-          NextJs
-        </span>
-      </motion.li>
-      <motion.li
-        whileHover={{ scale: 1.1 }}
-        variants={{
-          hidden: { rotate: 70, opacity: 0 },
-          show: { rotate: 0, opacity: 1 },
-        }}
-        className="text-center relative bg-gray-200 shadow-md rounded-3xl flex justify-center items-center group overflow-hidden z-10 w-24 sm:w-[8.625rem] aspect-[1/1.1] cursor-pointer"
-      >
-        <StyledComponentsIcon />
-        <span className="text-zinc-500 cursor-pointer transition-all duration-500 absolute md:-left-10 bottom-4 md:group-hover:left-9 md:text-base font-bold md:opacity-0 md:group-hover:opacity-100">
-          Styled C.
-        </span>
-      </motion.li>
-      <motion.li
-        whileHover={{ scale: 1.1 }}
-        variants={{
-          hidden: { rotate: 70, opacity: 0 },
-          show: { rotate: 0, opacity: 1 },
-        }}
-        className="text-center relative bg-gray-200 shadow-md rounded-3xl flex justify-center items-center group overflow-hidden z-10 w-24 sm:w-[8.625rem] aspect-[1/1.1] cursor-pointer"
-      >
-        <FigmaIcon />
-        <span className="text-zinc-500 cursor-pointer transition-all duration-500 absolute md:-left-10 bottom-4 md:group-hover:left-10 md:text-base font-bold md:opacity-0 md:group-hover:opacity-100">
-          Figma
-        </span>
-      </motion.li>
-      <motion.li
-        whileHover={{ scale: 1.1 }}
-        variants={{
-          hidden: { rotate: 70, opacity: 0 },
-          show: { rotate: 0, opacity: 1 },
-        }}
-        className="text-center relative bg-gray-200 shadow-md rounded-3xl flex justify-center items-center group overflow-hidden z-10 w-24 sm:w-[8.625rem] aspect-[1/1.1] cursor-pointer"
-      >
-        <JavaScriptIcon />
-        <span className="text-zinc-500 cursor-pointer transition-all duration-500 absolute md:-left-10 bottom-4 md:group-hover:left-7 md:text-base font-bold md:opacity-0 md:group-hover:opacity-100">
-          JavaScript
-        </span>
-      </motion.li>
-      <motion.li
-        whileHover={{ scale: 1.1 }}
-        variants={{
-          hidden: { rotate: 70, opacity: 0 },
-          show: { rotate: 0, opacity: 1 },
-        }}
-        className="text-center relative bg-gray-200 shadow-md rounded-3xl flex justify-center items-center group overflow-hidden z-10 w-24 sm:w-[8.625rem] aspect-[1/1.1] cursor-pointer"
-      >
-        <HtmlIcon />
-        <span className="text-zinc-500 cursor-pointer transition-all duration-500 absolute md:-left-10 bottom-4 md:group-hover:left-11 md:text-base font-bold md:opacity-0 md:group-hover:opacity-100">
-          Html5
-        </span>
-      </motion.li>
-      <motion.li
-        whileHover={{ scale: 1.1 }}
-        variants={{
-          hidden: { rotate: 70, opacity: 0 },
-          show: { rotate: 0, opacity: 1 },
-        }}
-        className="text-center relative bg-gray-200 shadow-md rounded-3xl flex justify-center items-center group overflow-hidden z-10 w-24 sm:w-[8.625rem] aspect-[1/1.1] cursor-pointer"
-      >
-        <CssIcon />
-        <span className="text-zinc-500 cursor-pointer transition-all duration-500 absolute md:-left-10 bottom-4 md:group-hover:left-12 md:text-base font-bold md:opacity-0 md:group-hover:opacity-100">
-          Css3
-        </span>
-      </motion.li>
-      <motion.li
-        whileHover={{ scale: 1.1 }}
-        variants={{
-          hidden: { rotate: 70, opacity: 0 },
-          show: { rotate: 0, opacity: 1 },
-        }}
-        className="text-center relative bg-gray-200 shadow-md rounded-3xl flex justify-center items-center group overflow-hidden z-10 w-24 sm:w-[8.625rem] aspect-[1/1.1] cursor-pointer"
-      >
-        <NodeJsIcon />
-        <span className="text-zinc-500 cursor-pointer transition-all duration-500 absolute md:left-10 bottom-4 md:group-hover:left-10 md:text-base font-bold md:opacity-0 md:group-hover:opacity-100">
-          NodeJs
-        </span>
-      </motion.li>
-      <motion.li
-        whileHover={{ scale: 1.1 }}
-        variants={{
-          hidden: { rotate: 70, opacity: 0 },
-          show: { rotate: 0, opacity: 1 },
-        }}
-        className="text-center relative bg-gray-200 shadow-md rounded-3xl flex justify-center items-center group overflow-hidden z-10 w-24 sm:w-[8.625rem] aspect-[1/1.1] cursor-pointer"
-      >
-        <MySqlIcon />
-        <span className="text-zinc-500 cursor-pointer transition-all duration-500 absolute md:left-10 bottom-4 md:group-hover:left-11 md:text-base font-bold md:opacity-0 md:group-hover:opacity-100">
-          MySql
-        </span>
-      </motion.li>
+      {data.map((item, index) => (
+        <motion.li
+          key={index}
+          ref={(el) => (elementRefs[index] = el)}
+          variants={{
+            hidden: { rotate: 70, opacity: 0 },
+            show: { rotate: 0, opacity: 1 },
+          }}
+          className="text-center shadow-lg rounded-3xl flex justify-center items-center group overflow-hidden z-10 w-24 md:w-[8.625rem] aspect-[1/1.1] cursor-pointer"
+        >
+          {item.icon}
+          <span className="text-zinc-400 transition-all duration-300 absolute top-2 md:-top-4 md:group-hover:top-4 text-md md:text-base font-bold md:opacity-0 md:group-hover:opacity-100">
+            {item.text}
+          </span>
+        </motion.li>
+      ))}
     </motion.ul>
   );
 };

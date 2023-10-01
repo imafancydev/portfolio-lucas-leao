@@ -1,12 +1,21 @@
 import { useEffect, useRef } from "react";
 import VanillaTilt, { TiltOptions } from "vanilla-tilt";
 
-export const UseTilt = <Element extends HTMLElement>(options?: TiltOptions) => {
-  const elementRef = useRef<Element>(null);
+export const UseTilt = <T extends HTMLElement>(
+  length: number,
+  options?: TiltOptions
+) => {
+  const elementRefs = useRef<Array<T | null>>(
+    Array.from({ length }, () => null)
+  );
 
   useEffect(() => {
-    VanillaTilt.init(elementRef.current as HTMLElement, options);
-  }, [elementRef, options]);
+    elementRefs.current.forEach((ref) => {
+      if (ref) {
+        VanillaTilt.init(ref, options || {});
+      }
+    });
+  }, [elementRefs, options]);
 
-  return elementRef;
+  return elementRefs.current;
 };
