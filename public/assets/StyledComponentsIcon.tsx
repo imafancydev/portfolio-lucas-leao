@@ -6,8 +6,8 @@ export const StyledComponentsIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={isDesktop ? 150 : 100}
-      height={isDesktop ? 150 : 100}
+      width={isDesktop ? 150 : 70}
+      height={isDesktop ? 150 : 70}
       version="1.1"
       viewBox="0 0 24 24"
     >
