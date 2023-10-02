@@ -4,10 +4,11 @@ import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
 
 import { Anchor } from "@/components/Anchor";
 import { Keyboard } from "@/components/Keyboard";
+
 export const MainSection = () => {
   return (
     <section
-      className="py-48 px-5 md:p-24 md:px-10 flex items-center bg-gray-200"
+      className="py-40 px-5 md:p-24 md:px-10 flex items-center bg-gray-200"
       id="inicio"
     >
       <div className="w-auto flex flex-col gap-2">

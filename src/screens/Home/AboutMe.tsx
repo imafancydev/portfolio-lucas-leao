@@ -1,7 +1,7 @@
 export const AboutMe = () => {
   return (
     <section
-      className="relative min-h-fit pt-12 pb-12 px-5 flex flex-col justify-start items-start overflow-hidden bg-gray-200"
+      className="relative min-h-fit pt-24 pb-24 px-5 flex flex-col justify-start items-start overflow-hidden bg-gray-200"
       id="sobre-mim"
     >
       <div className="relative flex flex-col max-w-2xl justify-start items-start gap-5">
