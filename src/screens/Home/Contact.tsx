@@ -11,7 +11,7 @@ export const Contact = () => {
       <strong className="text-center text-2xl text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 via-red-600 to-orange-400 font-bold md:text-3xl">
         Meu email, fale comigo!
       </strong>
-      <AnimatedText />
+      <AnimatedText text="lucasleaocontact@gmail.com" />
     </motion.section>
   );
 };

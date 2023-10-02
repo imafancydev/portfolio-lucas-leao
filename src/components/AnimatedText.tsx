@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Variants, motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-export const AnimatedText = () => {
+export const AnimatedText = ({ text }: { text: string }) => {
   const controls = useAnimation();
   const { ref, inView } = useInView({
     threshold: 0.5,
@@ -38,8 +38,6 @@ export const AnimatedText = () => {
       },
     },
   };
-
-  const text = "lucasleaocontact@gmail.com";
 
   return (
     <motion.span
