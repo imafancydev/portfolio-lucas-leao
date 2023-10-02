@@ -1,18 +1,18 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import { UseTilt } from "@/hook/UseTilt";
-import { Tailwind } from "../../public/assets/TailwindIcon";
 import { TiltOptions } from "vanilla-tilt";
-import { ReactIcon } from "../../public/assets/ReactIcon";
-import { TypeScriptIcon } from "../../public/assets/TypeScriptIcon";
-import { NextJsIcon } from "../../public/assets/NextJsIcon";
-import { StyledComponentsIcon } from "../../public/assets/StyledComponentsIcon";
-import { FigmaIcon } from "../../public/assets/FigmaIcon";
-import { JavaScriptIcon } from "../../public/assets/JavaScriptIcon";
-import { HtmlIcon } from "../../public/assets/HtmlIcon";
-import { CssIcon } from "../../public/assets/CssIcon";
-import { NodeJsIcon } from "../../public/assets/NodeJsIcon";
-import { MySqlIcon } from "../../public/assets/MySqlIcon";
+import { TypeScriptIcon } from "@/icons/TypeScriptIcon";
+import { ReactIcon } from "@/icons/ReactIcon";
+import { Tailwind } from "@/icons/TailwindIcon";
+import { NextJsIcon } from "@/icons/NextJsIcon";
+import { StyledComponentsIcon } from "@/icons/StyledComponentsIcon";
+import { FigmaIcon } from "@/icons/FigmaIcon";
+import { JavaScriptIcon } from "@/icons/JavaScriptIcon";
+import { HtmlIcon } from "@/icons/HtmlIcon";
+import { CssIcon } from "@/icons/CssIcon";
+import { NodeJsIcon } from "@/icons/NodeJsIcon";
+import { MySqlIcon } from "@/icons/MySqlIcon";
 
 export const ContainerCards = () => {
   const options: TiltOptions = {
