@@ -1,8 +1,14 @@
 import { Space_Grotesk } from "next/font/google";
+import { Anchor } from "./Anchor";
 import logo from "public/assets/logo.svg";
 import Image from "next/image";
-import { Anchor } from "./Anchor";
-import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
+
+import {
+  AiOutlineGithub,
+  AiOutlineLinkedin,
+  AiOutlineMail,
+  AiOutlineWhatsApp,
+} from "react-icons/ai";
 
 const space_grotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -54,6 +60,9 @@ export const Footer = () => {
           </a>
           <a href="https://www.linkedin.com/in/LucasLeao6/" target="_blank">
             <AiOutlineLinkedin size={30}></AiOutlineLinkedin>
+          </a>
+          <a href="https://wa.me/5521969502045" target="_blank">
+            <AiOutlineWhatsApp size={30}></AiOutlineWhatsApp>
           </a>
         </div>
       </div>
