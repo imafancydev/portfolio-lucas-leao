@@ -57,8 +57,7 @@ export const AnimatedText = () => {
         >
           {word.split("").map((character, charIndex) => (
             <motion.a
-              href="mailto:lucasleaocontact@gmail.com"
-              target="_blank"
+              href="mailto:lucasleaocontact@gmail.com?subject=Assunto%20do%20E-mail&body=Olá,%20gostaria%20de%20entrar%20em%20contato%20com%20você."
               className="text-2xl p-0 font-bold text-transparent bg-clip-text @apply bg-[#CA4246] bg-[linear-gradient(_45deg,#CA4246_16.666%,#E16541_16.666%,#E16541_33.333%,#F18F43_33.333%,#F18F43_50%,#8B9862_50%,#8B9862_66.666%,#476098_66.666%,#476098_83.333%,#A7489B_83.333%)] bg-[100%] hover:animate-[rainbow-text-simple-animation_0.5s_ease-in_forwards] animate-[rainbow-text-simple-animation-rev_0.75s_ease_forwards] bg-repeat cursor-pointer transition-all duration-500 hover:opacity-75 md:text-6xl "
               key={charIndex}
               variants={characterVariants}
