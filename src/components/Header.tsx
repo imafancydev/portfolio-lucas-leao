@@ -23,11 +23,11 @@ export const Header = () => {
 
   return (
     <header
-      className={`flex justify-center items-center z-50 px-5 py-5 fixed w-full transition-all duration-500 font-body md:px-8 ${
-        isMaximized ? "bg-gray-200 shadow-2xl" : "bg-transparent"
+      className={`backdrop-filter backdrop-blur-lg bg-opacity-30 flex justify-center items-center z-50 px-5 py-4 fixed w-full transition-all border-b border-gray-200 duration-500 md:px-8 ${
+        isMaximized ? "shadow-2xl" : "bg-transparent"
       } ${space_grotesk.className}`}
     >
-      <nav className="w-full max-w-[75rem] flex flex-col items-center md:flex-row bg">
+      <nav className="w-full max-w-[70rem] flex flex-col items-center md:flex-row bg">
         <div className="max-md:w-full max-md:flex max-md:justify-between max-md:items-center">
           <a href="#inicio">
             <Image
@@ -65,11 +65,6 @@ export const Header = () => {
           <li>
             <Anchor href="#habilidades" onClick={() => setMenuIsOpen(false)}>
               Habilidades
-            </Anchor>
-          </li>
-          <li>
-            <Anchor href="#projetos" onClick={() => setMenuIsOpen(false)}>
-              Projetos
             </Anchor>
           </li>
           <li>
