@@ -63,7 +63,7 @@ export const ContainerCards = () => {
             hidden: { rotate: 70, opacity: 0 },
             show: { rotate: 0, opacity: 1 },
           }}
-          className="text-center shadow-lg rounded-3xl flex justify-center items-center group overflow-hidden z-10 w-24 md:w-[8.625rem] aspect-[1/1.1] cursor-pointer"
+          className="text-center shadow-lg rounded-3xl flex justify-center items-center group overflow-hidden z-10 w-24 md:w-[9.300rem] aspect-[1/1.1] cursor-pointer"
         >
           {item.icon}
           <span className="text-zinc-400 transition-all duration-300 absolute top-2 md:-top-4 md:group-hover:top-4 text-md md:text-base font-bold md:opacity-0 md:group-hover:opacity-100">
