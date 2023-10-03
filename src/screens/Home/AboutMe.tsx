@@ -10,9 +10,9 @@ export const AboutMe = () => {
         </h2>
         <p className="text-gray-600 text-xl">
           Gosto de fazer ótimas paginas como essa que você está vendo, aprender
-          programação e programar são coisas prazerosas para
-          mim,TypeScript,React ,Tailwind e para mim as tecnologias mais
-          divertidas hoje no mundo tech!, espero que a gente se divirta junto!
+          programação e programar são coisas prazerosas para mim, TypeScript,
+          React, Tailwind e para mim as tecnologias mais divertidas hoje no
+          mundo tech, espero que nós se divirta junto!
         </p>
       </div>
     </section>
