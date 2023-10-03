@@ -33,8 +33,8 @@ export const ContainerCards = () => {
     { icon: <StyledComponentsIcon />, text: "Style C." },
     { icon: <FigmaIcon />, text: "Figma" },
     { icon: <JavaScriptIcon />, text: "JavaScript" },
-    { icon: <HtmlIcon />, text: "Html" },
-    { icon: <CssIcon />, text: "Css" },
+    { icon: <HtmlIcon />, text: "HTML" },
+    { icon: <CssIcon />, text: "CSS" },
     { icon: <NodeJsIcon />, text: "NodeJs" },
     { icon: <MySqlIcon />, text: "MySQL" },
   ];
