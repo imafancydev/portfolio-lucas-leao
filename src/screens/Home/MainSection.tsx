@@ -46,7 +46,7 @@ export const MainSection = () => {
       >
         <Stage intensity={3}>
           <Keyboard />
-          <OrbitControls autoRotate enableZoom={true} enablePan={false} />
+          <OrbitControls autoRotate enableZoom={false} enablePan={false} />
         </Stage>
       </Canvas>
     </section>
