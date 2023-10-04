@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { UseTilt } from "@/hook/UseTilt";
 import { TiltOptions } from "vanilla-tilt";
