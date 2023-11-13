@@ -18,7 +18,7 @@ const Home = () => {
         />
         <meta
           name="keywords"
-          content="Lucas Leão dev, Lucas Leão front-end, Lucas Leão, Leão, Lucas, Lucas front-end Leão"
+          content="Lucas Leão dev, Lucas Leão desenvolvedor, Lucas Leão dev, Leão, Lucas, Lucas front-end Leão, dev lucas leao, lucas leao dev, desenvolvedor lucas leão, lucas leão desenvolvedor front-end, full-stack lucas leão"
         />
         <meta name="robots" content="index, follow" />
 
@@ -49,7 +49,7 @@ const Home = () => {
           content="https://st5.depositphotos.com/14021298/65051/i/450/depositphotos_650516380-stock-photo-pink-paint-pastel-color-background.jpg"
         />
       </Head>
-      <div className="bg-gray-200">
+      <div className="bg-gray-200 ">
         <LayoutsPageDefault>
           <MainSection />
           <AboutMe />

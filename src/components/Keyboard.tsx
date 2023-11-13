@@ -7,7 +7,7 @@ Source: https://sketchfab.com/3d-models/mechanical-keyboard-1facc22c744a403dbb31
 Title: Mechanical Keyboard
 */
 
-import React, { useRef } from "react";
+import React from "react";
 import { useGLTF } from "@react-three/drei";
 
 export function Keyboard(props: any) {
