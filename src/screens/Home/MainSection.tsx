@@ -8,7 +8,7 @@ import { Keyboard } from "@/components/Keyboard";
 export const MainSection = () => {
   return (
     <section
-      className="py-38 px-5 md:p-24 md:px-10 flex items-center bg-gray-200"
+      className="py-40 px-5 md:p-30 md:px-10 flex items-center bg-gray-200"
       id="inicio"
     >
       <div className="w-auto flex flex-col gap-2">
